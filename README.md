@@ -1,30 +1,46 @@
-Basic setup for inf143 at uib, with a VM running webgoat
-========================================================
+Inf143
+======
 
-1. Install vagrant
+A vagrant setup for penetration testing in a class at the University of Bergen (UiB).
 
-2. clone this repo 
+Prerequisites
+-------------
 
-3. cd inf143 
+Vagrant which can be downloaded from https://www.vagrantup.com/ (Works on Linux, OS X and Windows)
 
-4. vagrant up
+Install
+-------
 
-5. Take a cup of coffee
+1. Clone this repository
+```
+  git clone https://github.com/dizk/inf143.git
+```
 
-Congrats you are done!
+2. Start vagrant with vagrant up from the inf143 folder
+```
+  cd inf143 && vagrant up 
+```
 
-Access webgoat on: 
+Take a cup of coffee (30 min wait approx. depending on your machine/internet speed)
 
-http://localhost:9876/WebGoat/attack
+Use
+---
 
-username: guest
-password: guest
+####Access WebGoat: 
 
-When you are done use
+  http://localhost:9876/WebGoat/attack
 
-vagrant suspend
+  username: guest
+  password: guest
 
+####Stopping the VM
 
-If you never want to use this virtual machine again use:
+To suspend (faster to continue the work later)
+```
+  vagrant suspend
+```
 
-vagrant destroy
+You can also use which will in fact destroy your VM
+```
+  vagrant destroy
+```
